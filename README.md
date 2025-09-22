@@ -1,4 +1,4 @@
-# Amine Bensalem — Portfolio
+# Amine Mabrouk — Portfolio
 
 Welcome to my personal portfolio website! This site showcases my work, skills, and projects as a Full-Stack / Web Developer.  
 
@@ -18,7 +18,7 @@ Welcome to my personal portfolio website! This site showcases my work, skills, a
 
 ## About Me
 
-Hi, I’m **Amine B.** — a software engineer passionate about building web applications and solving real-world problems through code.  
+Hi, I’m **Amine Mabrouk** — a software engineer passionate about building web applications and solving real-world problems through code.  
 I enjoy learning new technologies, I believe in clean, maintainable code, and in constantly challenging myself to improve.  
 
 ---

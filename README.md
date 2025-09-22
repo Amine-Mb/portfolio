@@ -35,19 +35,6 @@ Here are some of the languages, frameworks, and tools I use:
 
 ---
 
-## Projects
-
-Here are some highlighted projects featured on this portfolio:
-
-> *You can list a few of your best or most recent ones. For each, include a title, short description, tech stack, link if live or to repo.*
-
-| Project | Description | Technologies |
-|---|---|---|
-| **Project A** | What it does, why it's interesting | HTML, CSS, JS, etc. |
-| **Project B** | Another project, challenges, features | … |
-| **Project C** | … | … |
-
----
 
 ## How It’s Built
 

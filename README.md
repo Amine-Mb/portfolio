@@ -8,7 +8,6 @@ Welcome to my personal portfolio website! This site showcases my work, skills, a
 
 - [About Me](#about-me)  
 - [Technologies & Tools](#technologies--tools)  
-- [Projects](#projects)  
 - [How It’s Built](#how-its-built)  
 - [Deployment](#deployment)  
 - [Getting Started](#getting-started)  

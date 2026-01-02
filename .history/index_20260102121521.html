@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Amine Mabrouk - Passionate Software Engineer, Co-founder of Takwira.com, and Content Creator. Specialized in React, JavaScript, and modern web development."
+    />
+    <meta
+      name="keywords"
+      content="Software Engineer, Web Developer, React Developer, JavaScript, Frontend Developer, Amine Mabrouk"
+    />
+    <meta name="author" content="Amine Mabrouk" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Amine Mabrouk - Software Engineer & Content Creator"
+    />
+    <meta
+      property="og:description"
+      content="Passionate Software Engineer, Co-founder of Takwira.com, and Content Creator"
+    />
+    <meta property="og:image" content="./images/personalPic.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:title"
+      content="Amine Mabrouk - Software Engineer & Content Creator"
+    />
+    <meta
+      property="twitter:description"
+      content="Passionate Software Engineer, Co-founder of Takwira.com, and Content Creator"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Amine Mabrouk - Software Engineer & Content Creator</title>
+  </head>
+  <body>
+    <div class="container">
+      <video
+        class="video-loop"
+        autoplay
+        loop
+        muted
+        playsinline
+        aria-label="Background video loop"
+      >
+        <source src="video-loop.mp4" type="video/mp4" />
+      </video>
+      <header class="header">
+        <label for="menu" class="burger-menu">
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+          <div class="burger-menu__bar"></div>
+        </label>
+
+        <input id="menu" class="burger-menu__checkbox" type="checkbox" />
+
+        <nav class="navigation">
+          <ul class="navigation__list">
+            <li>
+              <a href="#bio" class="navigation__link navigation__bio">bio</a>
+            </li>
+            <li>
+              <a href="#skills" class="navigation__link navigation__skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a href="#media" class="navigation__link navigation__media"
+                >Media</a
+              >
+            </li>
+            <li>
+              <a href="#projects" class="navigation__link navigation__projects"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a href="#clients" class="navigation__link navigation__clients"
+                >My Clients</a
+              >
+            </li>
+            <li>
+              <a href="#contact" class="navigation__link navigation__contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div class="toggle">
+          <h3 class="toggle__title">Switch theme</h3>
+          <input
+            type="checkbox"
+            name="toggle checkbox"
+            id="toggle"
+            class="toggle__checkbox"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+
+      <section id="bio" class="bio section fade-in">
+        <div class="bio__data">
+          <div class="bio__greeting">Hello, I'm</div>
+          <h1 class="bio__heading">
+            <span class="bio__name-highlight">Amine Mabrouk</span>
+            <br />
+            <span class="bio__title-animated">Software Engineer</span>
+          </h1>
+          <p class="bio__objective">
+            Co-founder of <a href="#" class="bio__takwira">Takwira.com</a>,
+            passionate Software Engineer and content creator. I transform ideas
+            into digital experiences and share my knowledge on
+            <a href="" class="bio__facebook">Facebook</a>,
+            <a href="" class="bio__twitter">Twitter</a>,
+            <a href="" class="bio__linkedin">LinkedIn</a>, and
+            <a href="" class="bio__youtube">YouTube</a>.
+          </p>
+          <div class="bio__cta">
+            <a href="#contact" class="bio__links say-hi-link">Get In Touch</a>
+            <a href="./mohamedAbusreaResume.pdf" class="bio__links find-out-link"
+              >Download CV <span class="bio__arrow">↓</span></a
+            >
+          </div>
+        </div>
+        <div class="bio__pic-content">
+          <img
+            class="bio__pic"
+            src="./images/personalPic.png"
+            alt="picture of Amine mabrouk"
+          />
+        </div>
+      </section>
+
+      <!-- Statistics Section -->
+      <section id="statistics" class="statistics section section--with-bg fade-in">
+        <div class="statistics__container">
+          <div class="statistics__item">
+            <div class="statistics__number" data-target="50">0</div>
+            <div class="statistics__label">Projects Completed</div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__number" data-target="8">0</div>
+            <div class="statistics__label">Years Experience</div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__number" data-target="30">0</div>
+            <div class="statistics__label">Happy Clients</div>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__number" data-target="100">0</div>
+            <div class="statistics__label">Code Reviews</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services section fade-in">
+        <h2 class="h2__heading">What I Do</h2>
+        <div class="services__grid">
+          <div class="services__card">
+            <div class="services__icon">💻</div>
+            <h3 class="services__title">Web Development</h3>
+            <p class="services__description">
+              Building responsive, modern web applications using React, JavaScript,
+              and cutting-edge technologies.
+            </p>
+          </div>
+          <div class="services__card">
+            <div class="services__icon">🎨</div>
+            <h3 class="services__title">UI/UX Design</h3>
+            <p class="services__description">
+              Creating intuitive and beautiful user interfaces that provide
+              exceptional user experiences.
+            </p>
+          </div>
+          <div class="services__card">
+            <div class="services__icon">📱</div>
+            <h3 class="services__title">Frontend Development</h3>
+            <p class="services__description">
+              Developing fast, scalable frontend solutions with focus on
+              performance and accessibility.
+            </p>
+          </div>
+          <div class="services__card">
+            <div class="services__icon">🚀</div>
+            <h3 class="services__title">Content Creation</h3>
+            <p class="services__description">
+              Sharing knowledge through tutorials, articles, and educational
+              content on various platforms.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="skills section section--with-bg fade-in">
+        <h2 class="h2__heading">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__item" data-skill="95">
+            <div class="skills__header">
+              <h2 class="skills__title">HTML</h2>
+              <span class="skills__years">8 years</span>
+            </div>
+            <div class="skills__progress-bar">
+              <div class="skills__progress-fill" data-progress="95"></div>
+            </div>
+          </li>
+          <li class="skills__item" data-skill="95">
+            <div class="skills__header">
+              <h2 class="skills__title">CSS</h2>
+              <span class="skills__years">8 years</span>
+            </div>
+            <div class="skills__progress-bar">
+              <div class="skills__progress-fill" data-progress="95"></div>
+            </div>
+          </li>
+          <li class="skills__item" data-skill="90">
+            <div class="skills__header">
+              <h2 class="skills__title">JavaScript</h2>
+              <span class="skills__years">8 years</span>
+            </div>
+            <div class="skills__progress-bar">
+              <div class="skills__progress-fill" data-progress="90"></div>
+            </div>
+          </li>
+          <li class="skills__item" data-skill="85">
+            <div class="skills__header">
+              <h2 class="skills__title">React</h2>
+              <span class="skills__years">4 years</span>
+            </div>
+            <div class="skills__progress-bar">
+              <div class="skills__progress-fill" data-progress="85"></div>
+            </div>
+          </li>
+          <li class="skills__item" data-skill="75">
+            <div class="skills__header">
+              <h2 class="skills__title">Redux</h2>
+              <span class="skills__years">3 years</span>
+            </div>
+            <div class="skills__progress-bar">
+              <div class="skills__progress-fill" data-progress="75"></div>
+            </div>
+          </li>
+          <li class="skills__item" data-skill="70">
+            <div class="skills__header">
+              <h2 class="skills__title">React Testing Library</h2>
+              <span class="skills__years">1 year</span>
+            </div>
+            <div class="skills__progress-bar">
+              <div class="skills__progress-fill" data-progress="70"></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="media" class="media section fade-in">
+        <video
+          class="media__video"
+          poster="images/thumbnail.jpg"
+          controls
+          aria-label="Introduction video"
+        >
+          <source src="video.mp4" type="video/mp4" />
+        </video>
+      </section>
+
+      <section id="projects" class="projects section fade-in">
+        <h2 class="h2__heading">My Featured <br />Projects</h2>
+        <div class="projects__main">
+          <img
+            class="projects__img"
+            src="./images/project-1.jpg"
+            alt="Quran tab extension"
+          />
+          <div class="projects__data">
+            <h3 class="h3__heading">
+              Quran Tab <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              Quran Tab is an Islamic new tab page that will keep you inspired
+              by a verse from the Quran every time you open a new tab that helps
+              you achieve your "Khatma" and keeps you connected with the words
+              of Allah.
+            </p>
+            <a
+              class="projects__links"
+              href="https://bit.ly/qt-chrome"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+
+            <a
+              class="projects__links"
+              href="https://bit.ly/qt-edge"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+
+          <div class="projects__data">
+            <h3 class="h3__heading">
+              Quran Station <br />
+              Extension
+            </h3>
+            <p class="projects__description">
+              Small extension that gives you access to over 100 stations to help
+              you listen to the Quran from your favorite reciters easily
+              Quran-Station has over 100 stations to help you listen to the
+              Quran from your favorite reciters in a quick and easy way.
+            </p>
+            <a
+              class="projects__links"
+              href="https://bit.ly/qs-chrome"
+              target="_blank"
+              >Chrome Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__links"
+              href="https://bit.ly/qs-firefox"
+              target="_blank"
+              >Firefox Link</a
+            >
+            <span>-</span>
+            <a
+              class="projects__links"
+              href="https://bit.ly/qs-edge"
+              target="_blank"
+              >Edge Link</a
+            >
+          </div>
+
+          <img
+            class="projects__img"
+            src="./images/project-2.jpg"
+            alt="Quran tab extension"
+          />
+        </div>
+      </section>
+
+      <section id="clients" class="clients section section--with-bg fade-in">
+        <h2 class="h2__heading">
+          what My <br />
+          Clients Says
+        </h2>
+        <div class="clients__opinions">
+          <div class="clients__wrapper">
+            <div class="clients__opinion active">
+              <p class="clients__text">
+                Amine has the advantageous ability to understand a problem and
+                implement code to a high standard within the deadline. Each
+                project we have worked on, I know I can completely trust Amine
+                to own his tasks and complete what is needed when asked of him.
+              </p>
+            </div>
+            <div class="clients__opinion">
+              <p class="clients__text">
+                Amine will patiently listen to you and give you his own ideas as
+                well, and in the end, he comes up with something completely
+                different from what you're expecting, but the good news is,
+                you'll always love it.
+              </p>
+            </div>
+            <div class="clients__opinion">
+              <p class="clients__text">
+                I had a chance to work closely with Amine as a direct manager
+                from his first day at DeliveryHero until my last day there (6+
+                months). Amine's biggest strengths that I admire are taking
+                initiatives on personal and team level, and driving them.
+              </p>
+            </div>
+          </div>
+          <div class="clients__navigation">
+            <button
+              class="clients__nav-btn clients__nav-btn--prev"
+              aria-label="Previous testimonial"
+            >
+              <img src="./images/left-arrow.png" alt="Previous" />
+            </button>
+            <div class="clients__dots">
+              <button
+                class="clients__dot active"
+                aria-label="Testimonial 1"
+              ></button>
+              <button class="clients__dot" aria-label="Testimonial 2"></button>
+              <button class="clients__dot" aria-label="Testimonial 3"></button>
+            </div>
+            <button
+              class="clients__nav-btn clients__nav-btn--next"
+              aria-label="Next testimonial"
+            >
+              <img src="./images/right-arrow.png" alt="Next" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section fade-in">
+        <div>
+          <p class="contact__description">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a class="contact__email" href="mailto: aminemb50@gmail.com"
+            >aminemb50@gmail.com</a
+          >
+
+          <div class="contact__socials">
+            <a class="contact__social" href="#">
+              <img src="./images/brand/facebook.svg" alt="facebook" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/twitter.svg" alt="twitter" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/youtube.svg" alt="youtube" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/github.svg" alt="github" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/instagram.svg" alt="instagram.svg" />
+            </a>
+            <a class="contact__social" href="#">
+              <img src="./images/brand/LinkedIn.svg" alt="LinkedIn.svg" />
+            </a>
+          </div>
+        </div>
+        <div class="contact__formContent">
+          <h2 class="h2__heading">
+            Let’s Work <br />
+            Together!
+          </h2>
+          <form action="results.html" aria-label="Contact form">
+            <div class="contact__inputs">
+              <input
+                type="text"
+                class="contact__input"
+                name="name"
+                id="contact-name"
+                placeholder="Full Name"
+                aria-label="Full Name"
+                required
+              />
+              <input
+                type="tel"
+                class="contact__input"
+                id="contact-phone"
+                placeholder="Phone No."
+                name="tel"
+                aria-label="Phone Number"
+                required
+                pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+              />
+            </div>
+            <textarea
+              class="contact__input contact__textarea"
+              name="message"
+              id="contact-message"
+              placeholder="Your Message"
+              rows="1"
+              aria-label="Your Message"
+              required
+            ></textarea>
+            <input
+              type="submit"
+              class="contact__button"
+              value="Send Message"
+              aria-label="Submit contact form"
+            />
+          </form>
+        </div>
+      </section>
+
+      <footer class="footer">© 2025 by Amine Mabrouk</footer>
+
+      <!-- Scroll to Top Button -->
+      <button
+        class="scroll-to-top"
+        aria-label="Scroll to top"
+        title="Scroll to top"
+      >
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M12 19V5M12 5L5 12M12 5L19 12"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

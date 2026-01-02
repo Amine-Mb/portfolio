@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/_responsive.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1758555195856,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1758555195856,
+            "name": "Commit-0",
+            "content": "\r\n@media (max-width: 1000px) {\r\n  html {\r\n    font-size: 8px;\r\n  }\r\n}\r\n@media (max-width: 800px) {\r\n  .container {\r\n    row-gap: 8rem;\r\n  }\r\n  .section {\r\n    grid-template-columns: 1fr;\r\n  }\r\n  .bio__pic-content {\r\n    grid-row: 1;\r\n    justify-self: center;\r\n    margin-bottom: 4rem;\r\n  }\r\n  .skills__list {\r\n    grid-template-columns: repeat(2, 1fr);\r\n  }\r\n  .projects__main {\r\n    grid-template-columns: 1fr;\r\n    row-gap: 6rem;\r\n    justify-items: center;\r\n  }\r\n  .projects__data:nth-of-type(2) {\r\n    order: 1;\r\n  }\r\n  .clients__opinions {\r\n    font-size: var(--font-size-24);\r\n  }\r\n  .contact {\r\n    row-gap: 6rem;\r\n  }\r\n  .contact__formContent {\r\n    order: -1;\r\n  }\r\n}\r\n@media (max-width: 500px) {\r\n  .bio__pic {\r\n    width: 100%;\r\n  }\r\n  .header {\r\n    padding: 0;\r\n  }\r\n  .header::before {\r\n    z-index: 0;\r\n  }\r\n\r\n  .burger-menu {\r\n    display: flex;\r\n    flex-direction: column;\r\n    gap: 0.75rem;\r\n    z-index: 0;\r\n    align-self: center;\r\n    cursor: pointer;\r\n  }\r\n  .burger-menu__bar {\r\n    height: 0.3rem;\r\n    width: 4.375rem;\r\n    background-color: var(--color-text);\r\n    transition: var(--transition-timing);\r\n  }\r\n  .burger-menu__checkbox:checked + .navigation {\r\n    top: 100%;\r\n  }\r\n  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(1) {\r\n    transform: translateY(10px) rotate(40deg);\r\n  }\r\n  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(2) {\r\n    opacity: 0;\r\n    visibility: hidden;\r\n  }\r\n  .header:has(.burger-menu__checkbox:checked) .burger-menu__bar:nth-child(3) {\r\n    transform: translateY(-7px) rotate(-40deg);\r\n  }\r\n  .navigation {\r\n    position: absolute;\r\n    padding: 3rem 0;\r\n    width: 100vw;\r\n    background-color: var(--color-background);\r\n    top: 0;\r\n    border-bottom: 0.1rem solid var(--color-text);\r\n    z-index: -1;\r\n    width: 100vw;\r\n  }\r\n  .navigation__list {\r\n    justify-content: center;\r\n  }\r\n  .toggle {\r\n    padding: 3rem 0;\r\n    z-index: 1;\r\n  }\r\n}"
+        }
+    ]
+}

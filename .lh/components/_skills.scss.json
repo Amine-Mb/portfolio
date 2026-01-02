@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/_skills.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1758555022707,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1758555022707,
+            "name": "Commit-0",
+            "content": "\r\n.skills__list {\r\n  display: grid;\r\n  grid-template-columns: repeat(3, 1fr);\r\n  row-gap: 5rem;\r\n}\r\n\r\n.skills__item {\r\n  transition: var(--transition-timing);\r\n  user-select: none;\r\n}\r\n\r\n.skills__title {\r\n  font-size: var(--font-size-38);\r\n  font-weight: var(--font-weight-semi-bold);\r\n}\r\n\r\n.skills__years {\r\n  display: inline-block;\r\n  font-size: var(--font-size-20);\r\n  margin-top: 1rem;\r\n}\r\n\r\n.skills__item:hover {\r\n  text-shadow: 0 0 2px var(--color-green);\r\n}"
+        }
+    ]
+}

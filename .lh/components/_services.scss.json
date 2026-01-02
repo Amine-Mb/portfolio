@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/_services.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767353335699,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767353335699,
+            "name": "Commit-0",
+            "content": ".services {\r\n  grid-column: 1/-1;\r\n  padding: 8rem 0;\r\n}\r\n\r\n.services__grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(2, 1fr);\r\n  gap: 4rem;\r\n  margin-top: 4rem;\r\n}\r\n\r\n.services__card {\r\n  padding: 4rem 3rem;\r\n  background: var(--color-background);\r\n  border: 2px solid var(--color-grey);\r\n  border-radius: 1.5rem;\r\n  transition: all var(--transition-timing);\r\n  cursor: pointer;\r\n\r\n  &:hover {\r\n    transform: translateY(-1rem);\r\n    border-color: var(--color-green);\r\n    box-shadow: 0 1rem 3rem rgba(3, 166, 150, 0.2);\r\n  }\r\n}\r\n\r\n.services__icon {\r\n  font-size: 5rem;\r\n  margin-bottom: 2rem;\r\n  display: block;\r\n}\r\n\r\n.services__title {\r\n  font-size: var(--font-size-24);\r\n  font-weight: var(--font-weight-bold);\r\n  margin-bottom: 1.5rem;\r\n  color: var(--color-text);\r\n}\r\n\r\n.services__description {\r\n  font-size: var(--font-size-18);\r\n  line-height: 1.7;\r\n  color: var(--color-text);\r\n  opacity: 0.8;\r\n}\r\n\r\n@media (max-width: 800px) {\r\n  .services__grid {\r\n    grid-template-columns: 1fr;\r\n    gap: 3rem;\r\n  }\r\n}\r\n"
+        }
+    ]
+}

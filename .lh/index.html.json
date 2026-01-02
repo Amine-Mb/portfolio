@@ -1,0 +1,94 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 19,
+            "patches": [
+                {
+                    "date": 1755760016683,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1755760071026,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n <html lang=\"en\">\r\n   <head>\r\n     <meta charset=\"UTF-8\" />\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n-    <title>Document</title>\r\n+    <link rel=\"stylesheet\" href=\"style.css\" />\r\n+    <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body></body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755810610151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,6 +5,8 @@\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n     <link rel=\"stylesheet\" href=\"style.css\" />\r\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n-  <body></body>\r\n+  <body>\r\n+    <div class=\"\">Title</div>\r\n+  </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755810638143,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,7 +6,9 @@\n     <link rel=\"stylesheet\" href=\"style.css\" />\r\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body>\r\n-    <div class=\"\">Title</div>\r\n+    <div class=\"container\">\r\n+      <div class=\"title\">Title</div>\r\n+    </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811220787,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,12 @@\n <html lang=\"en\">\r\n   <head>\r\n     <meta charset=\"UTF-8\" />\r\n     <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n+    <link\r\n+      href=\"https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Raleway:wght@400;500;600;700&display=swap\"\r\n+      rel=\"stylesheet\"\r\n+    />\r\n     <link rel=\"stylesheet\" href=\"style.css\" />\r\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body>\r\n"
+                },
+                {
+                    "date": 1755811319313,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n-      <div class=\"title\">Title</div>\r\n+      <header class=\"header\"></header>\r\n     </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811357217,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,15 @@\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n-      <header class=\"header\"></header>\r\n+      <header class=\"header\">\r\n+        <nav class=\"navigatio ul li\"></nav>\r\n+        <nav class=\"navigatio ul li\"></nav>\r\n+        <nav class=\"navigatio ul li\"></nav>\r\n+        <nav class=\"navigatio ul li\"></nav>\r\n+        <nav class=\"navigatio ul li\"></nav>\r\n+        <nav class=\"navigatio ul li\"></nav>\r\n+      </header>\r\n     </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811370872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,8 @@\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n-      <header class=\"header\">\r\n-        <nav class=\"navigatio ul li\"></nav>\r\n-        <nav class=\"navigatio ul li\"></nav>\r\n-        <nav class=\"navigatio ul li\"></nav>\r\n-        <nav class=\"navigatio ul li\"></nav>\r\n-        <nav class=\"navigatio ul li\"></nav>\r\n-        <nav class=\"navigatio ul li\"></nav>\r\n-      </header>\r\n+      <header class=\"header\">nav.navigatio.ul.li*6</header>\r\n     </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811384372,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,8 @@\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n-      <header class=\"header\">nav.navigatio.ul.li*6</header>\r\n+      <header class=\"header\">nav.navigatio>ul>li*6>a</header>\r\n     </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811428785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,10 @@\n     <title>Amine Mabrouk</title>\r\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n-      <header class=\"header\">nav.navigatio>ul>li*6>a</header>\r\n+      <header class=\"header\">\r\n+        nav.navigatio>ul.navigation__list>li*6>a.navigation__lin\r\n+      </header>\r\n     </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811468785,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n       <header class=\"header\">\r\n-        nav.navigatio>ul.navigation__list>li*6>a.navigation__lin\r\n+        nav.navigatio>ul.navigation__list>li*6>a.navigation__link\r\n       </header>\r\n     </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811507156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,18 @@\n   </head>\r\n   <body>\r\n     <div class=\"container\">\r\n       <header class=\"header\">\r\n-        nav.navigatio>ul.navigation__list>li*6>a.navigation__link\r\n+        <nav class=\"navigatio\">\r\n+          <ul class=\"navigation__list\">\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+          </ul>\r\n+        </nav>\r\n       </header>\r\n     </div>\r\n   </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1755811561127,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n     <div class=\"container\">\r\n       <header class=\"header\">\r\n         <nav class=\"navigatio\">\r\n           <ul class=\"navigation__list\">\r\n+            <li><a href=\"#\" class=\"navigation__link\">bio</a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">Skills</a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">Media</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1755811581694,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,14 +14,14 @@\n     <div class=\"container\">\r\n       <header class=\"header\">\r\n         <nav class=\"navigatio\">\r\n           <ul class=\"navigation__list\">\r\n-            <li><a href=\"#\" class=\"navigation__link\">bio</a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\">Skills</a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\">Media</a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a>bio</li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1755811590912,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,9 +14,9 @@\n     <div class=\"container\">\r\n       <header class=\"header\">\r\n         <nav class=\"navigatio\">\r\n           <ul class=\"navigation__list\">\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a>bio</li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">bio</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n"
+                },
+                {
+                    "date": 1755811607630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,13 +15,13 @@\n       <header class=\"header\">\r\n         <nav class=\"navigatio\">\r\n           <ul class=\"navigation__list\">\r\n             <li><a href=\"#\" class=\"navigation__link\">bio</a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">Skills</a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">Projects</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1755811624131,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,12 +16,12 @@\n         <nav class=\"navigatio\">\r\n           <ul class=\"navigation__list\">\r\n             <li><a href=\"#\" class=\"navigation__link\">bio</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">Skills</a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">Media</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">Projects</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1755811632305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,10 +18,10 @@\n             <li><a href=\"#\" class=\"navigation__link\">bio</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">Skills</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">Media</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">Projects</a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">My Client</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1755811641007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n             <li><a href=\"#\" class=\"navigation__link\">Skills</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">Media</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">Projects</a></li>\r\n             <li><a href=\"#\" class=\"navigation__link\">My Clients</a></li>\r\n-            <li><a href=\"#\" class=\"navigation__link\"></a></li>\r\n+            <li><a href=\"#\" class=\"navigation__link\">Contact</a></li>\r\n           </ul>\r\n         </nav>\r\n       </header>\r\n     </div>\r\n"
+                },
+                {
+                    "date": 1755813817029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n           </ul>\r\n         </nav>\r\n         <div class=\"toggle\">\r\n           <h3 class=\"toggle__title\">Switch theme</h3>\r\n+          <input type=\"checkbox\" name=\"\" id=\"\" class=\"checkbox\" />\r\n         </div>\r\n       </header>\r\n     </div>\r\n   </body>\r\n"
+                }
+            ],
+            "date": 1755760016683,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE html>\r\n<html lang=\"en\">\r\n  <head>\r\n    <meta charset=\"UTF-8\" />\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\r\n    <title>Document</title>\r\n  </head>\r\n  <body></body>\r\n</html>\r\n"
+        }
+    ]
+}

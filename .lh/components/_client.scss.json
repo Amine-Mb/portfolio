@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/_client.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1758555088967,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1758555088967,
+            "name": "Commit-0",
+            "content": "\r\n.clients__opinions {\r\n  grid-column: 1 / -1;\r\n  font-size: var(--font-size-40);\r\n  line-height: 1.7;\r\n}\r\n\r\n.clients__wrapper {\r\n  display: flex;\r\n  overflow-x: auto;\r\n  scroll-snap-type: x mandatory;\r\n}\r\n\r\n.clients__opinion {\r\n  flex-basis: 100%;\r\n  flex-shrink: 0;\r\n  scroll-snap-align: start;\r\n}\r\n"
+        }
+    ]
+}

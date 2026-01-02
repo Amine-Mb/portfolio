@@ -1,0 +1,406 @@
+{
+    "sourceFile": "style.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 97,
+            "patches": [
+                {
+                    "date": 1755760082665,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1755760130053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n body {\r\n-  color: Black;\r\n+  background-color: Black;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760256419,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n-body {\r\n-  background-color: Black;\r\n+* {\r\n+  margin: 0;\r\n+  padding: 0;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760264668,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n * {\r\n   margin: 0;\r\n   padding: 0;\r\n+  font: inherit;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760279479,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,4 +2,6 @@\n   margin: 0;\r\n   padding: 0;\r\n   font: inherit;\r\n }\r\n+\r\n+*,\r\n"
+                },
+                {
+                    "date": 1755760299390,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,4 +4,7 @@\n   font: inherit;\r\n }\r\n \r\n *,\r\n+*::before,\r\n+*::after {\r\n+}\r\n"
+                },
+                {
+                    "date": 1755760312097,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,6 @@\n \r\n *,\r\n *::before,\r\n *::after {\r\n+  box-sizing: border-box;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760318366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,4 +8,7 @@\n *::before,\r\n *::after {\r\n   box-sizing: border-box;\r\n }\r\n+\r\n+a {\r\n+}\r\n"
+                },
+                {
+                    "date": 1755760330436,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,6 @@\n   box-sizing: border-box;\r\n }\r\n \r\n a {\r\n+  color: inherit;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760338980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,5 +11,6 @@\n }\r\n \r\n a {\r\n   color: inherit;\r\n+  display: inline-block;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760346171,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,4 +13,7 @@\n a {\r\n   color: inherit;\r\n   display: inline-block;\r\n }\r\n+\r\n+button {\r\n+}\r\n"
+                },
+                {
+                    "date": 1755760360067,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,6 +14,7 @@\n   color: inherit;\r\n   display: inline-block;\r\n }\r\n \r\n-button {\r\n+button {background-color: transparent;\r\n+    pointe\r\n }\r\n"
+                },
+                {
+                    "date": 1755760376464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,7 +14,9 @@\n   color: inherit;\r\n   display: inline-block;\r\n }\r\n \r\n-button {background-color: transparent;\r\n-    pointe\r\n+button {\r\n+  background-color: transparent;\r\n+  cursor: pointer;\r\n+  border: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1755760395263,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,4 +19,8 @@\n   background-color: transparent;\r\n   cursor: pointer;\r\n   border: none;\r\n }\r\n+ul,\r\n+ol {\r\n+  list-style: none;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755760919156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,29 @@\n+/* start css Reset*/\r\n+* {\r\n+  margin: 0;\r\n+  padding: 0;\r\n+  font: inherit;\r\n+}\r\n+\r\n+*,\r\n+*::before,\r\n+*::after {\r\n+  box-sizing: border-box;\r\n+}\r\n+\r\n+a {\r\n+  color: inherit;\r\n+  display: inline-block;\r\n+}\r\n+\r\n+button {\r\n+  background-color: transparent;\r\n+  cursor: pointer;\r\n+  border: none;\r\n+}\r\n+ul,\r\n+ol {\r\n+  list-style: none;\r\n+}\r\n+\r\n+/* End Css Reset*/\r\n"
+                },
+                {
+                    "date": 1755761231464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,40 @@\n+:root {\r\n+  --container-width: 119rem;\r\n+  --gutter: 2rem;\r\n+  --color-black: #000;\r\n+  --color-white: #fff;\r\n+  --color-blue: #2374e1;\r\n+  --color-light-blue: #1d9bf0;\r\n+  --color-dark-blue: #0a66c2;\r\n+  --color-darker-blue: #143ce8;\r\n+  --color-red: #ff0000;\r\n+  --color-green: #03a696;\r\n+  --color-grey: #f6f6f6;\r\n+  --color-dark-green: #42959b;\r\n+  --color-background: var(--color-white);\r\n+  --color-text: var(--color-black);\r\n+  --color-box-img: var(--color-black);\r\n+  --color-link-bg: var(--color-black);\r\n+  --color-input-border: var(--color-black);\r\n+  --font-family-raleway: \"Raleway\", sans-serif;\r\n+  --font-family-poppins: \"Poppins\", sans-serif;\r\n+  --font-weight-regular: 400;\r\n+  --font-weight-medium: 500;\r\n+  --font-weight-semi-bold: 600;\r\n+  --font-weight-bold: 700;\r\n+  --font-size-70: 7rem;\r\n+  --font-size-65: 6.5rem;\r\n+  --font-size-40: 4rem;\r\n+  --font-size-38: 3.8rem;\r\n+  --font-size-24: 2.4rem;\r\n+  --font-size-22: 2.2rem;\r\n+  --font-size-20: 2rem;\r\n+  --font-size-18: 1.8rem;\r\n+  --font-size-15: 1.5rem;\r\n+  --transition-timing: 0.3s;\r\n+}\r\n+\r\n /* start css Reset*/\r\n * {\r\n   margin: 0;\r\n   padding: 0;\r\n@@ -26,30 +62,4 @@\n   list-style: none;\r\n }\r\n \r\n /* End Css Reset*/\r\n-* {\r\n-  margin: 0;\r\n-  padding: 0;\r\n-  font: inherit;\r\n-}\r\n-\r\n-*,\r\n-*::before,\r\n-*::after {\r\n-  box-sizing: border-box;\r\n-}\r\n-\r\n-a {\r\n-  color: inherit;\r\n-  display: inline-block;\r\n-}\r\n-\r\n-button {\r\n-  background-color: transparent;\r\n-  cursor: pointer;\r\n-  border: none;\r\n-}\r\n-ul,\r\n-ol {\r\n-  list-style: none;\r\n-}\r\n"
+                },
+                {
+                    "date": 1755810727465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -62,4 +62,8 @@\n   list-style: none;\r\n }\r\n \r\n /* End Css Reset*/\r\n+\r\n+body {\r\n+  font-size: 1.6rem;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755810749764,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,4 +66,8 @@\n \r\n body {\r\n   font-size: 1.6rem;\r\n }\r\n+\r\n+.container {\r\n+  margin: 0 auto;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755810794234,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,5 +69,6 @@\n }\r\n \r\n .container {\r\n   margin: 0 auto;\r\n+  max-width: var(--container-width);\r\n }\r\n"
+                },
+                {
+                    "date": 1755810883011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,12 +63,12 @@\n }\r\n \r\n /* End Css Reset*/\r\n \r\n-body {\r\n+/* body {\r\n   font-size: 1.6rem;\r\n }\r\n \r\n .container {\r\n   margin: 0 auto;\r\n   max-width: var(--container-width);\r\n-}\r\n+} */\r\n"
+                },
+                {
+                    "date": 1755810892679,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,12 +63,12 @@\n }\r\n \r\n /* End Css Reset*/\r\n \r\n-/* body {\r\n+body {\r\n   font-size: 1.6rem;\r\n }\r\n \r\n .container {\r\n   margin: 0 auto;\r\n   max-width: var(--container-width);\r\n-} */\r\n+}\r\n"
+                },
+                {
+                    "date": 1755811141229,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,10 @@\n /* End Css Reset*/\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n+  font-family: var(--font-family-raleway);\r\n+  background-color: var(--color-background);\r\n }\r\n \r\n .container {\r\n   margin: 0 auto;\r\n"
+                },
+                {
+                    "date": 1755811171053,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,8 +67,9 @@\n body {\r\n   font-size: 1.6rem;\r\n   font-family: var(--font-family-raleway);\r\n   background-color: var(--color-background);\r\n+  color: var(--color-text);\r\n }\r\n \r\n .container {\r\n   margin: 0 auto;\r\n"
+                },
+                {
+                    "date": 1755811706037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,4 +74,8 @@\n .container {\r\n   margin: 0 auto;\r\n   max-width: var(--container-width);\r\n }\r\n+\r\n+.navigation__list {\r\n+  display: flex;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755811759461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,5 +77,10 @@\n }\r\n \r\n .navigation__list {\r\n   display: flex;\r\n+  gap: 2rem;\r\n }\r\n+\r\n+.navigation__link {\r\n+  text-decoration: none;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755811790481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,5 +82,6 @@\n }\r\n \r\n .navigation__link {\r\n   text-decoration: none;\r\n+  font-weight: var(--font-weight-medium);\r\n }\r\n"
+                },
+                {
+                    "date": 1755811821610,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,8 +80,9 @@\n   display: flex;\r\n   gap: 2rem;\r\n }\r\n \r\n-.navigation__link {\r\n+.navigation__link:link,\r\n+.navigation__link:visited {\r\n   text-decoration: none;\r\n   font-weight: var(--font-weight-medium);\r\n }\r\n"
+                },
+                {
+                    "date": 1755811890208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,4 +85,10 @@\n .navigation__link:visited {\r\n   text-decoration: none;\r\n   font-weight: var(--font-weight-medium);\r\n }\r\n+\r\n+.navigation__link:hover,\r\n+.navigation__link:activated {\r\n+  text-decoration: underline;\r\n+  color: var(--color-text);\r\n+}\r\n"
+                },
+                {
+                    "date": 1755811911456,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,8 @@\n   font-weight: var(--font-weight-medium);\r\n }\r\n \r\n .navigation__link:hover,\r\n-.navigation__link:activated {\r\n+.navigation__link:active {\r\n   text-decoration: underline;\r\n   color: var(--color-text);\r\n }\r\n"
+                },
+                {
+                    "date": 1755812288721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,8 +63,11 @@\n }\r\n \r\n /* End Css Reset*/\r\n \r\n+header {\r\n+  padding: 3rem 0;\r\n+}\r\n body {\r\n   font-size: 1.6rem;\r\n   font-family: var(--font-family-raleway);\r\n   background-color: var(--color-background);\r\n"
+                },
+                {
+                    "date": 1755812481423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,8 +65,10 @@\n /* End Css Reset*/\r\n \r\n header {\r\n   padding: 3rem 0;\r\n+  position: relative;\r\n+  display: flex;\r\n }\r\n body {\r\n   font-size: 1.6rem;\r\n   font-family: var(--font-family-raleway);\r\n"
+                },
+                {
+                    "date": 1755812495559,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,9 +67,11 @@\n header {\r\n   padding: 3rem 0;\r\n   position: relative;\r\n   display: flex;\r\n+  justify-content: center;\r\n }\r\n+\r\n body {\r\n   font-size: 1.6rem;\r\n   font-family: var(--font-family-raleway);\r\n   background-color: var(--color-background);\r\n"
+                },
+                {
+                    "date": 1755812503628,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,9 +63,9 @@\n }\r\n \r\n /* End Css Reset*/\r\n \r\n-header {\r\n+.header {\r\n   padding: 3rem 0;\r\n   position: relative;\r\n   display: flex;\r\n   justify-content: center;\r\n"
+                },
+                {
+                    "date": 1755812520892,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,11 @@\n   display: flex;\r\n   justify-content: center;\r\n }\r\n \r\n+.header::before {\r\n+}\r\n+\r\n body {\r\n   font-size: 1.6rem;\r\n   font-family: var(--font-family-raleway);\r\n   background-color: var(--color-background);\r\n"
+                },
+                {
+                    "date": 1755812531514,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,9 @@\n   justify-content: center;\r\n }\r\n \r\n .header::before {\r\n+  content: \"\";\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812544820,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,8 +72,9 @@\n }\r\n \r\n .header::before {\r\n   content: \"\";\r\n+  position: absolute;\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812566834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,8 +73,10 @@\n \r\n .header::before {\r\n   content: \"\";\r\n   position: absolute;\r\n+  height: 100%;\r\n+  width: 100%;\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812615952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,10 @@\n .header::before {\r\n   content: \"\";\r\n   position: absolute;\r\n   height: 100%;\r\n-  width: 100%;\r\n+  width: 100vw;\r\n+  border-bottom: ;\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812622867,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n   content: \"\";\r\n   position: absolute;\r\n   height: 100%;\r\n   width: 100vw;\r\n-  border-bottom: ;\r\n+  border-bottom: 0.1rem;\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812635194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n   content: \"\";\r\n   position: absolute;\r\n   height: 100%;\r\n   width: 100vw;\r\n-  border-bottom: 0.1rem;\r\n+  border-bottom: 0.1rem solid var(--color-input-border);\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812681968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,8 +76,9 @@\n   position: absolute;\r\n   height: 100%;\r\n   width: 100vw;\r\n   border-bottom: 0.1rem solid var(--color-input-border);\r\n+  top: ç;\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812688198,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -76,9 +76,9 @@\n   position: absolute;\r\n   height: 100%;\r\n   width: 100vw;\r\n   border-bottom: 0.1rem solid var(--color-input-border);\r\n-  top: ç;\r\n+  top: 0;\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755812694351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,9 @@\n   height: 100%;\r\n   width: 100vw;\r\n   border-bottom: 0.1rem solid var(--color-input-border);\r\n   top: 0;\r\n+  z-index: -1;\r\n }\r\n \r\n body {\r\n   font-size: 1.6rem;\r\n"
+                },
+                {
+                    "date": 1755861207346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,4 +108,8 @@\n .navigation__link:active {\r\n   text-decoration: underline;\r\n   color: var(--color-text);\r\n }\r\n+\r\n+/*Toggle */\r\n+\r\n+.to/* End Toggle*/;\r\n"
+                },
+                {
+                    "date": 1755861246771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,5 +111,11 @@\n }\r\n \r\n /*Toggle */\r\n \r\n-.to/* End Toggle*/;\r\n+.toggle {\r\n+  display: flex;\r\n+  gap: 1rem;\r\n+  margin-left: auto;\r\n+}\r\n+\r\n+/* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861306644,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,11 +111,11 @@\n }\r\n \r\n /*Toggle */\r\n \r\n-.toggle {\r\n+/* .toggle {\r\n   display: flex;\r\n   gap: 1rem;\r\n   margin-left: auto;\r\n-}\r\n+} */\r\n \r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861323596,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,11 +111,11 @@\n }\r\n \r\n /*Toggle */\r\n \r\n-/* .toggle {\r\n+.toggle {\r\n   display: flex;\r\n   gap: 1rem;\r\n   margin-left: auto;\r\n-} */\r\n+}\r\n \r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861381599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,5 +117,9 @@\n   gap: 1rem;\r\n   margin-left: auto;\r\n }\r\n \r\n+.toggle__title {\r\n+  font-weight: var(--font-weight-medium);\r\n+  font-size: var(--font-size-18);\r\n+}\r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861499451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -121,5 +121,11 @@\n .toggle__title {\r\n   font-weight: var(--font-weight-medium);\r\n   font-size: var(--font-size-18);\r\n }\r\n+\r\n+;toggle__checkbox{\r\n+    display: none;\r\n+}\r\n+\r\n+;toggle__\r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861518572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,9 +122,9 @@\n   font-weight: var(--font-weight-medium);\r\n   font-size: var(--font-size-18);\r\n }\r\n \r\n-;toggle__checkbox{\r\n+.toggle__checkbox{\r\n     display: none;\r\n }\r\n \r\n ;toggle__\r\n"
+                },
+                {
+                    "date": 1755861527051,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -122,10 +122,9 @@\n   font-weight: var(--font-weight-medium);\r\n   font-size: var(--font-size-18);\r\n }\r\n \r\n-.toggle__checkbox{\r\n-    display: none;\r\n+.toggle__checkbox {\r\n+  display: none;\r\n }\r\n \r\n-;toggle__\r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861697657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -126,5 +126,16 @@\n .toggle__checkbox {\r\n   display: none;\r\n }\r\n \r\n+.toggle__label {\r\n+  display: block;\r\n+  position: relative;\r\n+  background-color: var(--color-black);\r\n+  border-radius: 1.5rem;\r\n+  width: 4.5rem;\r\n+  height: 2.2rem;\r\n+  cursor: pointer;\r\n+  padding: 0.3rem 0.4rem;\r\n+}\r\n+\r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861734985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -135,7 +135,8 @@\n   width: 4.5rem;\r\n   height: 2.2rem;\r\n   cursor: pointer;\r\n   padding: 0.3rem 0.4rem;\r\n+  transition: 0.3s;\r\n }\r\n \r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755861950438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -138,5 +138,14 @@\n   padding: 0.3rem 0.4rem;\r\n   transition: 0.3s;\r\n }\r\n \r\n+.toggle__label::after {\r\n+  content: \"\";\r\n+  width: 1.6rem;\r\n+  height: 1.6rem;\r\n+  border-radius: 50%;\r\n+  display: block;\r\n+  background-color: var(--color-white);\r\n+}\r\n+\r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755862167905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -147,5 +147,14 @@\n   display: block;\r\n   background-color: var(--color-white);\r\n }\r\n \r\n+.toggle__checkbox:checked + .toggle__label {\r\n+  background-color: var(--color-white);\r\n+}\r\n+\r\n+.toggle__checkbox:checked + .toggle__label::after {\r\n+  transform: translateX(2.1rem);\r\n+  background-color: var(--color-green);\r\n+}\r\n+\r\n /* End Toggle*/\r\n"
+                },
+                {
+                    "date": 1755862186318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -145,8 +145,9 @@\n   height: 1.6rem;\r\n   border-radius: 50%;\r\n   display: block;\r\n   background-color: var(--color-white);\r\n+  transition: 0.3s;\r\n }\r\n \r\n .toggle__checkbox:checked + .toggle__label {\r\n   background-color: var(--color-white);\r\n"
+                },
+                {
+                    "date": 1755869991640,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -158,4 +158,6 @@\n   background-color: var(--color-green);\r\n }\r\n \r\n /* End Toggle*/\r\n+\r\n+/* Bio */\r\n"
+                },
+                {
+                    "date": 1755870047322,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -160,4 +160,10 @@\n \r\n /* End Toggle*/\r\n \r\n /* Bio */\r\n+\r\n+.section {\r\n+  display: grid;\r\n+  grid-template-columns: repeat(2, auto);\r\n+  align-items: start;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870309191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -166,4 +166,9 @@\n   display: grid;\r\n   grid-template-columns: repeat(2, auto);\r\n   align-items: start;\r\n }\r\n+\r\n+.bio {\r\n+  column-gap: 7.4rem;\r\n+  grid-template-columns: repeat(2, 1fr);\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870322377,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -171,4 +171,6 @@\n .bio {\r\n   column-gap: 7.4rem;\r\n   grid-template-columns: repeat(2, 1fr);\r\n }\r\n+\r\n+.bio__header;\r\n"
+                },
+                {
+                    "date": 1755870417240,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -172,5 +172,8 @@\n   column-gap: 7.4rem;\r\n   grid-template-columns: repeat(2, 1fr);\r\n }\r\n \r\n-.bio__header;\r\n+.bio__heading {\r\n+  font-size: var(--font-size-70);\r\n+  font-weight: var(--font-weight-bold);\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870434138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -176,4 +176,7 @@\n .bio__heading {\r\n   font-size: var(--font-size-70);\r\n   font-weight: var(--font-weight-bold);\r\n }\r\n+\r\n+bio__objective {\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870511398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -177,6 +177,10 @@\n   font-size: var(--font-size-70);\r\n   font-weight: var(--font-weight-bold);\r\n }\r\n \r\n-bio__objective {\r\n+.bio__objective {\r\n+  font-family: var(--font-family-poppins);\r\n+  font-weight: var(--font-weight-regular);\r\n+  font-size: var(--font-size-20);\r\n+  margin: 3rem 0 8rem;\r\n }\r\n"
+                },
+                {
+                    "date": 1755870523477,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -183,4 +183,6 @@\n   font-weight: var(--font-weight-regular);\r\n   font-size: var(--font-size-20);\r\n   margin: 3rem 0 8rem;\r\n }\r\n+\r\n+.bio__name;\r\n"
+                },
+                {
+                    "date": 1755870530222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -184,5 +184,6 @@\n   font-size: var(--font-size-20);\r\n   margin: 3rem 0 8rem;\r\n }\r\n \r\n-.bio__name;\r\n+.bio__name {\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870547011,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -185,5 +185,8 @@\n   margin: 3rem 0 8rem;\r\n }\r\n \r\n .bio__name {\r\n+  font-weight: var(--font-weight-semi-bold);\r\n }\r\n+\r\n+.bio;\r\n"
+                },
+                {
+                    "date": 1755870574128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -188,5 +188,7 @@\n .bio__name {\r\n   font-weight: var(--font-weight-semi-bold);\r\n }\r\n \r\n-.bio;\r\n+.bio__takwira {\r\n+  color: var(--color-green);\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870672214,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -191,4 +191,17 @@\n \r\n .bio__takwira {\r\n   color: var(--color-green);\r\n }\r\n+\r\n+.bio__facebook {\r\n+  color: var(--color-blue);\r\n+}\r\n+.bio__twitter {\r\n+  color: var(--color-light-blue);\r\n+}\r\n+.bio__linkedin {\r\n+  color: var(--color-dark-blue);\r\n+}\r\n+.bio__youtube {\r\n+  color: var(--color-red);\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870882151,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -204,4 +204,9 @@\n }\r\n .bio__youtube {\r\n   color: var(--color-red);\r\n }\r\n+\r\n+.bio__links {\r\n+  font-size: 2.4rem;\r\n+  font-weight: var();\r\n+}\r\n"
+                },
+                {
+                    "date": 1755870902692,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -207,6 +207,7 @@\n }\r\n \r\n .bio__links {\r\n   font-size: 2.4rem;\r\n-  font-weight: var();\r\n+  font-weight: var(--font-weight-semi-bold);\r\n+  text-decoration: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1755870944754,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -210,4 +210,6 @@\n   font-size: 2.4rem;\r\n   font-weight: var(--font-weight-semi-bold);\r\n   text-decoration: none;\r\n }\r\n+\r\n+.say-hi-link\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1755871035371,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -211,5 +211,9 @@\n   font-weight: var(--font-weight-semi-bold);\r\n   text-decoration: none;\r\n }\r\n \r\n-.say-hi-link\n\\ No newline at end of file\n+.say-hi-link {\r\n+  background-color: var(--color-link-bg);\r\n+  color: var(--color-white);\r\n+  padding: 0.7rem 4.7rem;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755871131329,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -216,4 +216,9 @@\n   background-color: var(--color-link-bg);\r\n   color: var(--color-white);\r\n   padding: 0.7rem 4.7rem;\r\n }\r\n+\r\n+.find-ou-link{\r\n+    pad: .7rem 0;\r\n+    margi\r\n+}\r\n"
+                },
+                {
+                    "date": 1755871152963,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -217,8 +217,8 @@\n   color: var(--color-white);\r\n   padding: 0.7rem 4.7rem;\r\n }\r\n \r\n-.find-ou-link{\r\n-    pad: .7rem 0;\r\n-    margi\r\n+.find-ou-link {\r\n+  pad: 0.7rem 0;\r\n+  margin-inline-start: 1.4rem;\r\n }\r\n"
+                },
+                {
+                    "date": 1755871598715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -221,4 +221,7 @@\n .find-ou-link {\r\n   pad: 0.7rem 0;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n+\r\n+@keyframes jump {\r\n+}\r\n"
+                },
+                {
+                    "date": 1755871723811,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,5 +223,19 @@\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n @keyframes jump {\r\n+  0% {\r\n+    transform: translateY(0.5rem);\r\n+  }\r\n+  35% {\r\n+    transform: translateY(-0.5rem);\r\n+  }\r\n+  70% {\r\n+    transform: translateY(0);\r\n+  }\r\n+  100% {\r\n+    transform: translateY(0);\r\n+  }\r\n }\r\n+\r\n+.bio__arrow;\r\n"
+                },
+                {
+                    "date": 1755871764650,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -237,5 +237,8 @@\n     transform: translateY(0);\r\n   }\r\n }\r\n \r\n-.bio__arrow;\r\n+.bio__arrow {\r\n+  display: inline-block;\r\n+  animation: jump 1s infinite alternate ease-in-out;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755871837473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -211,15 +211,15 @@\n   font-weight: var(--font-weight-semi-bold);\r\n   text-decoration: none;\r\n }\r\n \r\n-.say-hi-link {\r\n+.bio .say-hi-link {\r\n   background-color: var(--color-link-bg);\r\n   color: var(--color-white);\r\n   padding: 0.7rem 4.7rem;\r\n }\r\n \r\n-.find-ou-link {\r\n+.bio .find-ou-link {\r\n   pad: 0.7rem 0;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755872002225,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,14 @@\n ol {\r\n   list-style: none;\r\n }\r\n \r\n+html {\r\n+  font-size: 62.5%;\r\n+  scroll-behavior: smooth;\r\n+  scroll-padding-top: 11rem;\r\n+}\r\n+\r\n /* End Css Reset*/\r\n \r\n .header {\r\n   padding: 3rem 0;\r\n"
+                },
+                {
+                    "date": 1755872235259,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,250 @@\n+:root {\r\n+  --container-width: 119rem;\r\n+  --gutter: 2rem;\r\n+  --color-black: #000;\r\n+  --color-white: #fff;\r\n+  --color-blue: #2374e1;\r\n+  --color-light-blue: #1d9bf0;\r\n+  --color-dark-blue: #0a66c2;\r\n+  --color-darker-blue: #143ce8;\r\n+  --color-red: #ff0000;\r\n+  --color-green: #03a696;\r\n+  --color-grey: #f6f6f6;\r\n+  --color-dark-green: #42959b;\r\n+  --color-background: var(--color-white);\r\n+  --color-text: var(--color-black);\r\n+  --color-box-img: var(--color-black);\r\n+  --color-link-bg: var(--color-black);\r\n+  --color-input-border: var(--color-black);\r\n+  --font-family-raleway: \"Raleway\", sans-serif;\r\n+  --font-family-poppins: \"Poppins\", sans-serif;\r\n+  --font-weight-regular: 400;\r\n+  --font-weight-medium: 500;\r\n+  --font-weight-semi-bold: 600;\r\n+  --font-weight-bold: 700;\r\n+  --font-size-70: 7rem;\r\n+  --font-size-65: 6.5rem;\r\n+  --font-size-40: 4rem;\r\n+  --font-size-38: 3.8rem;\r\n+  --font-size-24: 2.4rem;\r\n+  --font-size-22: 2.2rem;\r\n+  --font-size-20: 2rem;\r\n+  --font-size-18: 1.8rem;\r\n+  --font-size-15: 1.5rem;\r\n+  --transition-timing: 0.3s;\r\n+}\r\n+\r\n+/* start css Reset*/\r\n+* {\r\n+  margin: 0;\r\n+  padding: 0;\r\n+  font: inherit;\r\n+}\r\n+\r\n+*,\r\n+*::before,\r\n+*::after {\r\n+  box-sizing: border-box;\r\n+}\r\n+\r\n+a {\r\n+  color: inherit;\r\n+  display: inline-block;\r\n+}\r\n+\r\n+button {\r\n+  background-color: transparent;\r\n+  cursor: pointer;\r\n+  border: none;\r\n+}\r\n+ul,\r\n+ol {\r\n+  list-style: none;\r\n+}\r\n+\r\n+html {\r\n+  font-size: 62.5%;\r\n+  scroll-behavior: smooth;\r\n+  scroll-padding-top: 11rem;\r\n+}\r\n+\r\n+/* End Css Reset*/\r\n+\r\n+.header {\r\n+  padding: 3rem 0;\r\n+  position: relative;\r\n+  display: flex;\r\n+  justify-content: center;\r\n+}\r\n+\r\n+.header::before {\r\n+  content: \"\";\r\n+  position: absolute;\r\n+  height: 100%;\r\n+  width: 100vw;\r\n+  border-bottom: 0.1rem solid var(--color-input-border);\r\n+  top: 0;\r\n+  z-index: -1;\r\n+}\r\n+\r\n+body {\r\n+  font-size: 1.6rem;\r\n+  font-family: var(--font-family-raleway);\r\n+  background-color: var(--color-background);\r\n+  color: var(--color-text);\r\n+}\r\n+\r\n+.container {\r\n+  margin: 0 auto;\r\n+  max-width: var(--container-width);\r\n+}\r\n+\r\n+.navigation__list {\r\n+  display: flex;\r\n+  gap: 2rem;\r\n+}\r\n+\r\n+.navigation__link:link,\r\n+.navigation__link:visited {\r\n+  text-decoration: none;\r\n+  font-weight: var(--font-weight-medium);\r\n+}\r\n+\r\n+.navigation__link:hover,\r\n+.navigation__link:active {\r\n+  text-decoration: underline;\r\n+  color: var(--color-text);\r\n+}\r\n+\r\n+/*Toggle */\r\n+\r\n+.toggle {\r\n+  display: flex;\r\n+  gap: 1rem;\r\n+  margin-left: auto;\r\n+}\r\n+\r\n+.toggle__title {\r\n+  font-weight: var(--font-weight-medium);\r\n+  font-size: var(--font-size-18);\r\n+}\r\n+\r\n+.toggle__checkbox {\r\n+  display: none;\r\n+}\r\n+\r\n+.toggle__label {\r\n+  display: block;\r\n+  position: relative;\r\n+  background-color: var(--color-black);\r\n+  border-radius: 1.5rem;\r\n+  width: 4.5rem;\r\n+  height: 2.2rem;\r\n+  cursor: pointer;\r\n+  padding: 0.3rem 0.4rem;\r\n+  transition: 0.3s;\r\n+}\r\n+\r\n+.toggle__label::after {\r\n+  content: \"\";\r\n+  width: 1.6rem;\r\n+  height: 1.6rem;\r\n+  border-radius: 50%;\r\n+  display: block;\r\n+  background-color: var(--color-white);\r\n+  transition: 0.3s;\r\n+}\r\n+\r\n+.toggle__checkbox:checked + .toggle__label {\r\n+  background-color: var(--color-white);\r\n+}\r\n+\r\n+.toggle__checkbox:checked + .toggle__label::after {\r\n+  transform: translateX(2.1rem);\r\n+  background-color: var(--color-green);\r\n+}\r\n+\r\n+/* End Toggle*/\r\n+\r\n+/* Bio */\r\n+\r\n+.section {\r\n+  display: grid;\r\n+  grid-template-columns: repeat(2, auto);\r\n+  align-items: start;\r\n+}\r\n+\r\n+.bio {\r\n+  column-gap: 7.4rem;\r\n+  grid-template-columns: repeat(2, 1fr);\r\n+}\r\n+\r\n+.bio__heading {\r\n+  font-size: var(--font-size-70);\r\n+  font-weight: var(--font-weight-bold);\r\n+}\r\n+\r\n+.bio__objective {\r\n+  font-family: var(--font-family-poppins);\r\n+  font-weight: var(--font-weight-regular);\r\n+  font-size: var(--font-size-20);\r\n+  margin: 3rem 0 8rem;\r\n+}\r\n+\r\n+.bio__name {\r\n+  font-weight: var(--font-weight-semi-bold);\r\n+}\r\n+\r\n+.bio__takwira {\r\n+  color: var(--color-green);\r\n+}\r\n+\r\n+.bio__facebook {\r\n+  color: var(--color-blue);\r\n+}\r\n+.bio__twitter {\r\n+  color: var(--color-light-blue);\r\n+}\r\n+.bio__linkedin {\r\n+  color: var(--color-dark-blue);\r\n+}\r\n+.bio__youtube {\r\n+  color: var(--color-red);\r\n+}\r\n+\r\n+.bio__links {\r\n+  font-size: 2.4rem;\r\n+  font-weight: var(--font-weight-semi-bold);\r\n+  text-decoration: none;\r\n+}\r\n+\r\n+.bio .say-hi-link {\r\n+  background-color: var(--color-link-bg);\r\n+  color: var(--color-white);\r\n+  padding: 0.7rem 4.7rem;\r\n+}\r\n+\r\n+.find-ou-link {\r\n+  padding: 0.7rem 0;\r\n+  margin-inline-start: 1.4rem;\r\n+}\r\n+\r\n+@keyframes jump {\r\n+  0% {\r\n+    transform: translateY(0.5rem);\r\n+  }\r\n+  35% {\r\n+    transform: translateY(-0.5rem);\r\n+  }\r\n+  70% {\r\n+    transform: translateY(0);\r\n+  }\r\n+  100% {\r\n+    transform: translateY(0);\r\n+  }\r\n+}\r\n+\r\n+.bio__arrow {\r\n+  display: inline-block;\r\n+  animation: jump 1s infinite alternate ease-in-out;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755872263620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -225,258 +225,10 @@\n }\r\n \r\n .find-ou-link {\r\n   padding: 0.7rem 0;\r\n-  margin-inline-start: 1.4rem;\r\n-}\r\n+  -webkit-margin-start: 1.4rem;\r\n \r\n-@keyframes jump {\r\n-  0% {\r\n-    transform: translateY(0.5rem);\r\n-  }\r\n-  35% {\r\n-    transform: translateY(-0.5rem);\r\n-  }\r\n-  70% {\r\n-    transform: translateY(0);\r\n-  }\r\n-  100% {\r\n-    transform: translateY(0);\r\n-  }\r\n-}\r\n-\r\n-.bio__arrow {\r\n-  display: inline-block;\r\n-  animation: jump 1s infinite alternate ease-in-out;\r\n-}\r\n-:root {\r\n-  --container-width: 119rem;\r\n-  --gutter: 2rem;\r\n-  --color-black: #000;\r\n-  --color-white: #fff;\r\n-  --color-blue: #2374e1;\r\n-  --color-light-blue: #1d9bf0;\r\n-  --color-dark-blue: #0a66c2;\r\n-  --color-darker-blue: #143ce8;\r\n-  --color-red: #ff0000;\r\n-  --color-green: #03a696;\r\n-  --color-grey: #f6f6f6;\r\n-  --color-dark-green: #42959b;\r\n-  --color-background: var(--color-white);\r\n-  --color-text: var(--color-black);\r\n-  --color-box-img: var(--color-black);\r\n-  --color-link-bg: var(--color-black);\r\n-  --color-input-border: var(--color-black);\r\n-  --font-family-raleway: \"Raleway\", sans-serif;\r\n-  --font-family-poppins: \"Poppins\", sans-serif;\r\n-  --font-weight-regular: 400;\r\n-  --font-weight-medium: 500;\r\n-  --font-weight-semi-bold: 600;\r\n-  --font-weight-bold: 700;\r\n-  --font-size-70: 7rem;\r\n-  --font-size-65: 6.5rem;\r\n-  --font-size-40: 4rem;\r\n-  --font-size-38: 3.8rem;\r\n-  --font-size-24: 2.4rem;\r\n-  --font-size-22: 2.2rem;\r\n-  --font-size-20: 2rem;\r\n-  --font-size-18: 1.8rem;\r\n-  --font-size-15: 1.5rem;\r\n-  --transition-timing: 0.3s;\r\n-}\r\n-\r\n-/* start css Reset*/\r\n-* {\r\n-  margin: 0;\r\n-  padding: 0;\r\n-  font: inherit;\r\n-}\r\n-\r\n-*,\r\n-*::before,\r\n-*::after {\r\n-  box-sizing: border-box;\r\n-}\r\n-\r\n-a {\r\n-  color: inherit;\r\n-  display: inline-block;\r\n-}\r\n-\r\n-button {\r\n-  background-color: transparent;\r\n-  cursor: pointer;\r\n-  border: none;\r\n-}\r\n-ul,\r\n-ol {\r\n-  list-style: none;\r\n-}\r\n-\r\n-html {\r\n-  font-size: 62.5%;\r\n-  scroll-behavior: smooth;\r\n-  scroll-padding-top: 11rem;\r\n-}\r\n-\r\n-/* End Css Reset*/\r\n-\r\n-.header {\r\n-  padding: 3rem 0;\r\n-  position: relative;\r\n-  display: flex;\r\n-  justify-content: center;\r\n-}\r\n-\r\n-.header::before {\r\n-  content: \"\";\r\n-  position: absolute;\r\n-  height: 100%;\r\n-  width: 100vw;\r\n-  border-bottom: 0.1rem solid var(--color-input-border);\r\n-  top: 0;\r\n-  z-index: -1;\r\n-}\r\n-\r\n-body {\r\n-  font-size: 1.6rem;\r\n-  font-family: var(--font-family-raleway);\r\n-  background-color: var(--color-background);\r\n-  color: var(--color-text);\r\n-}\r\n-\r\n-.container {\r\n-  margin: 0 auto;\r\n-  max-width: var(--container-width);\r\n-}\r\n-\r\n-.navigation__list {\r\n-  display: flex;\r\n-  gap: 2rem;\r\n-}\r\n-\r\n-.navigation__link:link,\r\n-.navigation__link:visited {\r\n-  text-decoration: none;\r\n-  font-weight: var(--font-weight-medium);\r\n-}\r\n-\r\n-.navigation__link:hover,\r\n-.navigation__link:active {\r\n-  text-decoration: underline;\r\n-  color: var(--color-text);\r\n-}\r\n-\r\n-/*Toggle */\r\n-\r\n-.toggle {\r\n-  display: flex;\r\n-  gap: 1rem;\r\n-  margin-left: auto;\r\n-}\r\n-\r\n-.toggle__title {\r\n-  font-weight: var(--font-weight-medium);\r\n-  font-size: var(--font-size-18);\r\n-}\r\n-\r\n-.toggle__checkbox {\r\n-  display: none;\r\n-}\r\n-\r\n-.toggle__label {\r\n-  display: block;\r\n-  position: relative;\r\n-  background-color: var(--color-black);\r\n-  border-radius: 1.5rem;\r\n-  width: 4.5rem;\r\n-  height: 2.2rem;\r\n-  cursor: pointer;\r\n-  padding: 0.3rem 0.4rem;\r\n-  transition: 0.3s;\r\n-}\r\n-\r\n-.toggle__label::after {\r\n-  content: \"\";\r\n-  width: 1.6rem;\r\n-  height: 1.6rem;\r\n-  border-radius: 50%;\r\n-  display: block;\r\n-  background-color: var(--color-white);\r\n-  transition: 0.3s;\r\n-}\r\n-\r\n-.toggle__checkbox:checked + .toggle__label {\r\n-  background-color: var(--color-white);\r\n-}\r\n-\r\n-.toggle__checkbox:checked + .toggle__label::after {\r\n-  transform: translateX(2.1rem);\r\n-  background-color: var(--color-green);\r\n-}\r\n-\r\n-/* End Toggle*/\r\n-\r\n-/* Bio */\r\n-\r\n-.section {\r\n-  display: grid;\r\n-  grid-template-columns: repeat(2, auto);\r\n-  align-items: start;\r\n-}\r\n-\r\n-.bio {\r\n-  column-gap: 7.4rem;\r\n-  grid-template-columns: repeat(2, 1fr);\r\n-}\r\n-\r\n-.bio__heading {\r\n-  font-size: var(--font-size-70);\r\n-  font-weight: var(--font-weight-bold);\r\n-}\r\n-\r\n-.bio__objective {\r\n-  font-family: var(--font-family-poppins);\r\n-  font-weight: var(--font-weight-regular);\r\n-  font-size: var(--font-size-20);\r\n-  margin: 3rem 0 8rem;\r\n-}\r\n-\r\n-.bio__name {\r\n-  font-weight: var(--font-weight-semi-bold);\r\n-}\r\n-\r\n-.bio__takwira {\r\n-  color: var(--color-green);\r\n-}\r\n-\r\n-.bio__facebook {\r\n-  color: var(--color-blue);\r\n-}\r\n-.bio__twitter {\r\n-  color: var(--color-light-blue);\r\n-}\r\n-.bio__linkedin {\r\n-  color: var(--color-dark-blue);\r\n-}\r\n-.bio__youtube {\r\n-  color: var(--color-red);\r\n-}\r\n-\r\n-.bio__links {\r\n-  font-size: 2.4rem;\r\n-  font-weight: var(--font-weight-semi-bold);\r\n-  text-decoration: none;\r\n-}\r\n-\r\n-.bio .say-hi-link {\r\n-  background-color: var(--color-link-bg);\r\n-  color: var(--color-white);\r\n-  padding: 0.7rem 4.7rem;\r\n-}\r\n-\r\n-.bio .find-ou-link {\r\n-  pad: 0.7rem 0;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n @keyframes jump {\r\n"
+                },
+                {
+                    "date": 1755872301495,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,11 +224,9 @@\n   padding: 0.7rem 4.7rem;\r\n }\r\n \r\n .find-ou-link {\r\n-  padding: 0.7rem 0;\r\n-  -webkit-margin-start: 1.4rem;\r\n-\r\n+  padding: 0.7rem 0.7rem;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n @keyframes jump {\r\n"
+                },
+                {
+                    "date": 1755872310572,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n   padding: 0.7rem 4.7rem;\r\n }\r\n \r\n .find-ou-link {\r\n-  padding: 0.7rem 0.7rem;\r\n+  padding: 0.7rem 7rem;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n @keyframes jump {\r\n"
+                },
+                {
+                    "date": 1755872322868,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,10 +223,10 @@\n   color: var(--color-white);\r\n   padding: 0.7rem 4.7rem;\r\n }\r\n \r\n-.find-ou-link {\r\n-  padding: 0.7rem 7rem;\r\n+.find-out-link {\r\n+  padding: 0.7rem 0.7rem;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n @keyframes jump {\r\n"
+                },
+                {
+                    "date": 1755872329808,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -224,9 +224,9 @@\n   padding: 0.7rem 4.7rem;\r\n }\r\n \r\n .find-out-link {\r\n-  padding: 0.7rem 0.7rem;\r\n+  padding: 0.7rem 0;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n @keyframes jump {\r\n"
+                },
+                {
+                    "date": 1755872341946,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -223,9 +223,9 @@\n   color: var(--color-white);\r\n   padding: 0.7rem 4.7rem;\r\n }\r\n \r\n-.find-out-link {\r\n+.bio .find-out-link {\r\n   padding: 0.7rem 0;\r\n   margin-inline-start: 1.4rem;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755873671201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -247,4 +247,16 @@\n .bio__arrow {\r\n   display: inline-block;\r\n   animation: jump 1s infinite alternate ease-in-out;\r\n }\r\n+\r\n+.bio__pic-content {\r\n+  display: flex;\r\n+  position: relative;\r\n+}\r\n+\r\n+.bio__pic-content::before {\r\n+}\r\n+\r\n+.bio__pic {\r\n+  width: 42.7rem;\r\n+}\r\n"
+                },
+                {
+                    "date": 1755873694432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -254,8 +254,10 @@\n   position: relative;\r\n }\r\n \r\n .bio__pic-content::before {\r\n+  content: \"\";\r\n+  position: absolute;\r\n }\r\n \r\n .bio__pic {\r\n   width: 42.7rem;\r\n"
+                },
+                {
+                    "date": 1755873850136,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -256,8 +256,14 @@\n \r\n .bio__pic-content::before {\r\n   content: \"\";\r\n   position: absolute;\r\n+  background-color: var(--color-box-img);\r\n+  width: 100%;\r\n+  height: 46rem;\r\n+  z-index: -1;\r\n+  border-radius: 1.8rem;\r\n+  box-shadow: ;\r\n }\r\n \r\n .bio__pic {\r\n   width: 42.7rem;\r\n"
+                },
+                {
+                    "date": 1755873860274,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -261,9 +261,9 @@\n   width: 100%;\r\n   height: 46rem;\r\n   z-index: -1;\r\n   border-radius: 1.8rem;\r\n-  box-shadow: ;\r\n+  box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);\r\n }\r\n \r\n .bio__pic {\r\n   width: 42.7rem;\r\n"
+                },
+                {
+                    "date": 1755873880541,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -251,8 +251,9 @@\n \r\n .bio__pic-content {\r\n   display: flex;\r\n   position: relative;\r\n+  align-items: flex-end;\r\n }\r\n \r\n .bio__pic-content::before {\r\n   content: \"\";\r\n"
+                },
+                {
+                    "date": 1755873927916,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -252,8 +252,9 @@\n .bio__pic-content {\r\n   display: flex;\r\n   position: relative;\r\n   align-items: flex-end;\r\n+  justify-self: end;\r\n }\r\n \r\n .bio__pic-content::before {\r\n   content: \"\";\r\n"
+                },
+                {
+                    "date": 1755874009527,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,8 +94,10 @@\n   color: var(--color-text);\r\n }\r\n \r\n .container {\r\n+  display: grid;\r\n+  row-gap: 11rem;\r\n   margin: 0 auto;\r\n   max-width: var(--container-width);\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1755875328308,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,6 +269,6 @@\n   box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);\r\n }\r\n \r\n .bio__pic {\r\n-  width: 42.7rem;\r\n+  width: 49.7rem;\r\n }\r\n"
+                },
+                {
+                    "date": 1755879295030,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -260,9 +260,9 @@\n \r\n .bio__pic-content::before {\r\n   content: \"\";\r\n   position: absolute;\r\n-  background-color: var(--color-box-img);\r\n+  background-color: var(--color-white);\r\n   width: 100%;\r\n   height: 46rem;\r\n   z-index: -1;\r\n   border-radius: 1.8rem;\r\n"
+                },
+                {
+                    "date": 1755879331432,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,6 +269,6 @@\n   box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);\r\n }\r\n \r\n .bio__pic {\r\n-  width: 49.7rem;\r\n+  width: 42.7rem;\r\n }\r\n"
+                },
+                {
+                    "date": 1755879340451,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -269,6 +269,6 @@\n   box-shadow: 2.17543px 8.7017px 38.0699px rgba(0, 0, 0, 0.15);\r\n }\r\n \r\n .bio__pic {\r\n-  width: 50.7rem;\r\n+  width: 55.7rem;\r\n }\r\n"
+                },
+                {
+                    "date": 1755879483403,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -270,5 +270,6 @@\n }\r\n \r\n .bio__pic {\r\n   width: 42.7rem;\r\n+  height: ;\r\n }\r\n"
+                }
+            ],
+            "date": 1755760082665,
+            "name": "Commit-0",
+            "content": "body {\r\n  color: Black;\r\n}\r\n"
+        }
+    ]
+}

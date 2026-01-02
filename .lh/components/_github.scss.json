@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/_github.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767353341789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767353341789,
+            "name": "Commit-0",
+            "content": ".github-projects {\r\n  grid-column: 1/-1;\r\n  margin-bottom: 8rem;\r\n}\r\n\r\n.github-projects__loading {\r\n  text-align: center;\r\n  padding: 4rem 0;\r\n  font-size: var(--font-size-20);\r\n  color: var(--color-text);\r\n  opacity: 0.7;\r\n}\r\n\r\n.github-projects__grid {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(32rem, 1fr));\r\n  gap: 3rem;\r\n  margin-top: 3rem;\r\n}\r\n\r\n.github-project-card {\r\n  background: var(--color-background);\r\n  border: 2px solid var(--color-grey);\r\n  border-radius: 1.5rem;\r\n  padding: 3rem;\r\n  transition: all var(--transition-timing);\r\n  opacity: 0;\r\n  transform: translateY(2rem);\r\n  transition: opacity 0.6s ease, transform 0.6s ease, border-color 0.3s ease,\r\n    box-shadow 0.3s ease;\r\n\r\n  &.visible {\r\n    opacity: 1;\r\n    transform: translateY(0);\r\n  }\r\n\r\n  &:hover {\r\n    border-color: var(--color-green);\r\n    transform: translateY(-0.5rem);\r\n    box-shadow: 0 1rem 3rem rgba(3, 166, 150, 0.2);\r\n  }\r\n}\r\n\r\n.github-project-card__header {\r\n  margin-bottom: 1.5rem;\r\n}\r\n\r\n.github-project-card__title {\r\n  font-size: var(--font-size-24);\r\n  font-weight: var(--font-weight-bold);\r\n  margin-bottom: 1rem;\r\n  color: var(--color-text);\r\n  word-break: break-word;\r\n}\r\n\r\n.github-project-card__meta {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  flex-wrap: wrap;\r\n  gap: 1rem;\r\n}\r\n\r\n.github-project-card__language {\r\n  padding: 0.4rem 1rem;\r\n  border-radius: 1.5rem;\r\n  font-size: var(--font-size-15);\r\n  font-weight: var(--font-weight-medium);\r\n}\r\n\r\n.github-project-card__stats {\r\n  display: flex;\r\n  gap: 1.5rem;\r\n  font-size: var(--font-size-15);\r\n  color: var(--color-text);\r\n  opacity: 0.7;\r\n}\r\n\r\n.github-project-card__description {\r\n  font-size: var(--font-size-18);\r\n  line-height: 1.7;\r\n  color: var(--color-text);\r\n  opacity: 0.8;\r\n  margin-bottom: 2rem;\r\n  min-height: 5rem;\r\n}\r\n\r\n.github-project-card__footer {\r\n  display: flex;\r\n  gap: 2rem;\r\n  flex-wrap: wrap;\r\n  margin-top: 2rem;\r\n  padding-top: 2rem;\r\n  border-top: 1px solid var(--color-grey);\r\n}\r\n\r\n.github-project-card__link {\r\n  font-size: var(--font-size-18);\r\n  font-weight: var(--font-weight-medium);\r\n  color: var(--color-green);\r\n  text-decoration: none;\r\n  transition: all var(--transition-timing);\r\n  display: inline-flex;\r\n  align-items: center;\r\n  gap: 0.5rem;\r\n\r\n  &:hover {\r\n    color: var(--color-dark-green);\r\n    transform: translateX(0.3rem);\r\n  }\r\n\r\n  &--demo {\r\n    color: var(--color-darker-blue);\r\n\r\n    &:hover {\r\n      color: var(--color-blue);\r\n    }\r\n  }\r\n}\r\n\r\n@media (max-width: 800px) {\r\n  .github-projects__grid {\r\n    grid-template-columns: 1fr;\r\n    gap: 2rem;\r\n  }\r\n\r\n  .github-project-card {\r\n    padding: 2rem;\r\n  }\r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "components/_statistics.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1767353333843,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1767353333843,
+            "name": "Commit-0",
+            "content": ".statistics {\r\n  grid-column: 1/-1;\r\n  padding: 8rem 0;\r\n}\r\n\r\n.statistics__container {\r\n  display: grid;\r\n  grid-template-columns: repeat(4, 1fr);\r\n  gap: 4rem;\r\n  text-align: center;\r\n}\r\n\r\n.statistics__item {\r\n  padding: 3rem 2rem;\r\n  transition: transform var(--transition-timing);\r\n\r\n  &:hover {\r\n    transform: translateY(-0.5rem);\r\n  }\r\n}\r\n\r\n.statistics__number {\r\n  font-size: var(--font-size-65);\r\n  font-weight: var(--font-weight-bold);\r\n  color: var(--color-green);\r\n  line-height: 1.2;\r\n  margin-bottom: 1rem;\r\n  display: block;\r\n}\r\n\r\n.statistics__label {\r\n  font-size: var(--font-size-20);\r\n  font-weight: var(--font-weight-medium);\r\n  color: var(--color-text);\r\n  text-transform: uppercase;\r\n  letter-spacing: 0.1rem;\r\n}\r\n\r\n@media (max-width: 800px) {\r\n  .statistics__container {\r\n    grid-template-columns: repeat(2, 1fr);\r\n    gap: 3rem;\r\n  }\r\n}\r\n\r\n@media (max-width: 500px) {\r\n  .statistics__container {\r\n    grid-template-columns: 1fr;\r\n    gap: 2rem;\r\n  }\r\n\r\n  .statistics__number {\r\n    font-size: var(--font-size-40);\r\n  }\r\n}\r\n"
+        }
+    ]
+}

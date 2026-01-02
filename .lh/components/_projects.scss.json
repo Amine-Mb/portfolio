@@ -1,0 +1,22 @@
+{
+    "sourceFile": "components/_projects.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1758555068487,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1767353338044,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,4 @@\n-\r\n .projects__main {\r\n   display: grid;\r\n   grid-template-columns: repeat(2, 1fr);\r\n   column-gap: 7.4rem;\r\n@@ -18,13 +17,55 @@\n .projects__description {\r\n   line-height: 1.5;\r\n }\r\n \r\n+.projects__tags {\r\n+  display: flex;\r\n+  gap: 1rem;\r\n+  flex-wrap: wrap;\r\n+  margin-bottom: 1.5rem;\r\n+}\r\n+\r\n+.projects__tag {\r\n+  display: inline-block;\r\n+  padding: 0.5rem 1.2rem;\r\n+  background-color: var(--color-grey);\r\n+  color: var(--color-text);\r\n+  border-radius: 2rem;\r\n+  font-size: var(--font-size-15);\r\n+  font-weight: var(--font-weight-medium);\r\n+  transition: all var(--transition-timing);\r\n+}\r\n+\r\n+.projects__data:hover .projects__tag {\r\n+  background-color: var(--color-green);\r\n+  color: var(--color-white);\r\n+  transform: translateY(-0.2rem);\r\n+}\r\n+\r\n+.projects__links-wrapper {\r\n+  display: flex;\r\n+  align-items: center;\r\n+  gap: 1rem;\r\n+  margin-top: 2.3rem;\r\n+  flex-wrap: wrap;\r\n+}\r\n+\r\n+.projects__separator {\r\n+  color: var(--color-text);\r\n+  opacity: 0.5;\r\n+}\r\n+\r\n .projects__links {\r\n   color: var(--color-darker-blue);\r\n   font-family: var(--font-family-poppins);\r\n   font-weight: var(--font-weight-medium);\r\n-  margin-top: 2.3rem;\r\n+  transition: all var(--transition-timing);\r\n+\r\n+  &:hover {\r\n+    color: var(--color-green);\r\n+    transform: translateX(0.3rem);\r\n+  }\r\n }\r\n \r\n .projects__links::after {\r\n   content: \"\";\r\n@@ -33,5 +74,20 @@\n   height: 1.4rem;\r\n   background-image: url(\"images/external-icon.png\");\r\n   background-size: contain;\r\n   margin-left: 0.6rem;\r\n-}\n\\ No newline at end of file\n+  transition: transform var(--transition-timing);\r\n+}\r\n+\r\n+.projects__links:hover::after {\r\n+  transform: translate(0.3rem, -0.3rem);\r\n+}\r\n+\r\n+.projects__img {\r\n+  transition: transform 0.3s ease, box-shadow 0.3s ease;\r\n+  border-radius: 1rem;\r\n+  overflow: hidden;\r\n+\r\n+  &:hover {\r\n+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3);\r\n+  }\r\n+}\r\n"
+                }
+            ],
+            "date": 1758555068487,
+            "name": "Commit-0",
+            "content": "\r\n.projects__main {\r\n  display: grid;\r\n  grid-template-columns: repeat(2, 1fr);\r\n  column-gap: 7.4rem;\r\n  row-gap: 7.5rem;\r\n}\r\n\r\n.projects__img {\r\n  box-shadow: 0 0 0.5rem rgb(0, 0, 0, 0.2);\r\n  max-width: 100%;\r\n}\r\n\r\n.projects__data {\r\n  align-self: center;\r\n}\r\n\r\n.projects__description {\r\n  line-height: 1.5;\r\n}\r\n\r\n.projects__links {\r\n  color: var(--color-darker-blue);\r\n  font-family: var(--font-family-poppins);\r\n  font-weight: var(--font-weight-medium);\r\n  margin-top: 2.3rem;\r\n}\r\n\r\n.projects__links::after {\r\n  content: \"\";\r\n  display: inline-block;\r\n  width: 1.4rem;\r\n  height: 1.4rem;\r\n  background-image: url(\"images/external-icon.png\");\r\n  background-size: contain;\r\n  margin-left: 0.6rem;\r\n}"
+        }
+    ]
+}

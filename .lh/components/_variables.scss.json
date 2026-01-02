@@ -1,0 +1,22 @@
+{
+    "sourceFile": "components/_variables.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1758554687441,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1758554694249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,5 +32,5 @@\n   --font-size-20: 2rem;\r\n   --font-size-18: 1.8rem;\r\n   --font-size-15: 1.5rem;\r\n   --transition-timing: 0.3s;\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                }
+            ],
+            "date": 1758554687441,
+            "name": "Commit-0",
+            "content": ":root {\r\n  --container-width: 119rem;\r\n  --gutter: 2rem;\r\n  --color-black: #000;\r\n  --color-white: #fff;\r\n  --color-blue: #2374e1;\r\n  --color-light-blue: #1d9bf0;\r\n  --color-dark-blue: #0a66c2;\r\n  --color-darker-blue: #143ce8;\r\n  --color-red: #ff0000;\r\n  --color-green: #03a696;\r\n  --color-grey: #f6f6f6;\r\n  --color-dark-green: #42959b;\r\n  --color-background: var(--color-white);\r\n  --color-text: var(--color-black);\r\n  --color-box-img: var(--color-black);\r\n  --color-box2-img: var(--color-white);\r\n  --color-link-bg: var(--color-black);\r\n  --color-input-border: var(--color-black);\r\n  --font-family-raleway: \"Raleway\", sans-serif;\r\n  --font-family-poppins: \"Poppins\", sans-serif;\r\n  --font-weight-regular: 400;\r\n  --font-weight-medium: 500;\r\n  --font-weight-semi-bold: 600;\r\n  --font-weight-bold: 700;\r\n  --font-size-70: 7rem;\r\n  --font-size-65: 6.5rem;\r\n  --font-size-40: 4rem;\r\n  --font-size-38: 3.8rem;\r\n  --font-size-24: 2.4rem;\r\n  --font-size-22: 2.2rem;\r\n  --font-size-20: 2rem;\r\n  --font-size-18: 1.8rem;\r\n  --font-size-15: 1.5rem;\r\n  --transition-timing: 0.3s;\r\n}"
+        }
+    ]
+}

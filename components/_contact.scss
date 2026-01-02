@@ -1,0 +1,108 @@
+@import "./mixins";
+
+.contact {
+  @include twoColumns(20rem, 0);
+
+  align-items: center;
+}
+.contact__description {
+  font-size: var(--font-size-20);
+  line-height: 1.9;
+}
+.contact__email {
+  font-weight: var(--font-weight-bold);
+  margin: 2.5rem 0;
+}
+.contact__social {
+  transition: var(--transition-timing);
+}
+.contact__social:hover {
+  transform: scale(1.2);
+}
+
+.contact__inputs {
+  display: flex;
+  gap: 3rem;
+}
+.contact__input {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 0.1rem solid var(--color-input-border);
+  flex: 1;
+}
+.contact__textarea {
+  width: 100%;
+  margin-top: 4rem;
+}
+.contact__button {
+  background-color: var(--color-link-bg);
+  color: var(--color-white);
+  padding: 1.7rem 1.8rem;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-24);
+  margin-top: 3.4rem;
+}
+
+.contact form:invalid::after {
+  content: "*";
+  font-size: var(--font-size-38);
+  color: var(--color-red);
+}
+
+// Form validation styles
+.contact__input.error {
+  border-bottom-color: var(--color-red);
+  animation: shake 0.3s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-0.5rem); }
+  75% { transform: translateX(0.5rem); }
+}
+
+.form-message {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: var(--font-size-18);
+  animation: slideDown 0.3s ease;
+  
+  &--success {
+    background-color: rgba(3, 166, 150, 0.1);
+    color: var(--color-green);
+    border: 1px solid var(--color-green);
+  }
+  
+  &--error {
+    background-color: rgba(255, 0, 0, 0.1);
+    color: var(--color-red);
+    border: 1px solid var(--color-red);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.contact__button {
+  transition: all var(--transition-timing);
+  cursor: pointer;
+  
+  &:hover {
+    transform: translateY(-0.2rem);
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}

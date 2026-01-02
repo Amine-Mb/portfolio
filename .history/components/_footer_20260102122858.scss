@@ -1,0 +1,112 @@
+.footer {
+  padding: 4rem 0 2rem;
+  font-size: var(--font-size-15);
+  border-top: 0.1rem solid var(--color-input-border);
+  grid-column: 1/-1;
+  margin-top: 4rem;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  margin-bottom: 3rem;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  font-size: var(--font-size-24);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.footer__subtitle {
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-semi-bold);
+  margin-bottom: 1.5rem;
+  color: var(--color-text);
+}
+
+.footer__description {
+  font-size: var(--font-size-18);
+  line-height: 1.7;
+  color: var(--color-text);
+  opacity: 0.8;
+}
+
+.footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    font-size: var(--font-size-18);
+    color: var(--color-text);
+    text-decoration: none;
+    transition: all var(--transition-timing);
+    opacity: 0.8;
+
+    &:hover {
+      opacity: 1;
+      color: var(--color-green);
+      transform: translateX(0.5rem);
+    }
+  }
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer__social {
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--color-grey);
+  transition: all var(--transition-timing);
+
+  img {
+    width: 2rem;
+    height: 2rem;
+    filter: invert(var(--invert-filter, 0));
+  }
+
+  &:hover {
+    background-color: var(--color-green);
+    transform: translateY(-0.3rem);
+    box-shadow: 0 0.5rem 1rem rgba(3, 166, 150, 0.3);
+
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+.footer__bottom {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 0.1rem solid var(--color-grey);
+  color: var(--color-text);
+  opacity: 0.7;
+}
+
+@media (max-width: 800px) {
+  .footer__content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}

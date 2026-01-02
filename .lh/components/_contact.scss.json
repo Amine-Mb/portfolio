@@ -1,0 +1,26 @@
+{
+    "sourceFile": "components/_contact.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1758555112042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1758556772878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+@import \"./mixins\";\r\n \r\n .contact {\r\n   column-gap: 20rem;\r\n   grid-template-columns: repeat(2, 1fr);\r\n@@ -46,5 +47,5 @@\n .contact form:invalid::after {\r\n   content: \"*\";\r\n   font-size: var(--font-size-38);\r\n   color: var(--color-red);\r\n-}\n\\ No newline at end of file\n+}\r\n"
+                },
+                {
+                    "date": 1758556783921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n @import \"./mixins\";\r\n \r\n .contact {\r\n-  column-gap: 20rem;\r\n-  grid-template-columns: repeat(2, 1fr);\r\n+   @include twoColumns(20rem, 0);\r\n+\r\n   align-items: center;\r\n }\r\n .contact__description {\r\n   font-size: var(--font-size-20);\r\n"
+                }
+            ],
+            "date": 1758555112042,
+            "name": "Commit-0",
+            "content": "\r\n.contact {\r\n  column-gap: 20rem;\r\n  grid-template-columns: repeat(2, 1fr);\r\n  align-items: center;\r\n}\r\n.contact__description {\r\n  font-size: var(--font-size-20);\r\n  line-height: 1.9;\r\n}\r\n.contact__email {\r\n  font-weight: var(--font-weight-bold);\r\n  margin: 2.5rem 0;\r\n}\r\n.contact__social {\r\n  transition: var(--transition-timing);\r\n}\r\n.contact__social:hover {\r\n  transform: scale(1.2);\r\n}\r\n\r\n.contact__inputs {\r\n  display: flex;\r\n  gap: 3rem;\r\n}\r\n.contact__input {\r\n  border: 0;\r\n  outline: 0;\r\n  background: transparent;\r\n  border-bottom: 0.1rem solid var(--color-input-border);\r\n  flex: 1;\r\n}\r\n.contact__textarea {\r\n  width: 100%;\r\n  margin-top: 4rem;\r\n}\r\n.contact__button {\r\n  background-color: var(--color-link-bg);\r\n  color: var(--color-white);\r\n  padding: 1.7rem 1.8rem;\r\n  font-weight: var(--font-weight-medium);\r\n  font-size: var(--font-size-24);\r\n  margin-top: 3.4rem;\r\n}\r\n\r\n.contact form:invalid::after {\r\n  content: \"*\";\r\n  font-size: var(--font-size-38);\r\n  color: var(--color-red);\r\n}"
+        }
+    ]
+}

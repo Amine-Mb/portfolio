@@ -1,0 +1,30 @@
+{
+    "sourceFile": "style.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1758555320523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1758555419553,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,13 +1,13 @@\n-@use \"./components/variables\";\r\n-@use \"./components/reset\";\r\n-@use \"./components/global\";\r\n-@use \"./components/header\";\r\n-@use \"./components/bio\";\r\n-@use \"./components/skills\";\r\n-@use \"./components/media\";\r\n-@use \"./components/projects\";\r\n-@use \"./components/clients\";\r\n-@use \"./components/contact\";\r\n-@use \"./components/footer\";\r\n-@use \"./components/theme\";\r\n-@use \"./components/responsive\";\r\n+@use \"components/variables\";\r\n+@use \"components/reset\";\r\n+@use \"components/global\";\r\n+@use \"components/header\";\r\n+@use \"components/bio\";\r\n+@use \"components/skills\";\r\n+@use \"components/media\";\r\n+@use \"components/projects\";\r\n+@use \"components/clients\";\r\n+@use \"components/contact\";\r\n+@use \"components/footer\";\r\n+@use \"components/theme\";\r\n+@use \"components/responsive\";\r\n"
+                },
+                {
+                    "date": 1758555425209,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n @use \"components/bio\";\r\n @use \"components/skills\";\r\n @use \"components/media\";\r\n @use \"components/projects\";\r\n-@use \"components/clients\";\r\n+@use \"components/client\";\r\n @use \"components/contact\";\r\n @use \"components/footer\";\r\n @use \"components/theme\";\r\n @use \"components/responsive\";\r\n"
+                },
+                {
+                    "date": 1767353344473,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,12 +2,16 @@\n @use \"components/reset\";\r\n @use \"components/global\";\r\n @use \"components/header\";\r\n @use \"components/bio\";\r\n+@use \"components/statistics\";\r\n+@use \"components/services\";\r\n @use \"components/skills\";\r\n @use \"components/media\";\r\n @use \"components/projects\";\r\n+@use \"components/github\";\r\n @use \"components/client\";\r\n @use \"components/contact\";\r\n @use \"components/footer\";\r\n+@use \"components/loader\";\r\n @use \"components/theme\";\r\n @use \"components/responsive\";\r\n"
+                }
+            ],
+            "date": 1758555320523,
+            "name": "Commit-0",
+            "content": "@use \"./components/variables\";\r\n@use \"./components/reset\";\r\n@use \"./components/global\";\r\n@use \"./components/header\";\r\n@use \"./components/bio\";\r\n@use \"./components/skills\";\r\n@use \"./components/media\";\r\n@use \"./components/projects\";\r\n@use \"./components/clients\";\r\n@use \"./components/contact\";\r\n@use \"./components/footer\";\r\n@use \"./components/theme\";\r\n@use \"./components/responsive\";\r\n"
+        }
+    ]
+}
